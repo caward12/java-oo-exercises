@@ -10,9 +10,19 @@ public class Fraction {
 		this.denominator = denominator;
 	}
 	
+	public int getNum(){
+		return this.numerator;
+	}
+	
+	public int getDen(){
+		return this.denominator;
+	}
+	
 	public Fraction add(Fraction other){
-		int newNum = this.numerator + other.numerator;
-		int newDen = this.denominator + other.denominator;
+		int newDen = this.denominator * other.denominator;
+		int num1 = this.numerator * other.denominator;
+		int num2 = other.numerator * this.denominator;
+		int newNum = num1 +num2;
 		return new Fraction(newNum, newDen);
 	}
 	

@@ -49,6 +49,11 @@ public class Robot {
 		return this.y;
 	}
 	
+	public String getLocation()
+	{
+		return "(getX(), getY())";
+	}
+	
 	public int getSpeed()
 	{
 		return this.speed;

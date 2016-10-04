@@ -29,12 +29,14 @@ public class Rectangle {
 		}
 	}
 	
-	public String square(){
+	public boolean square(){
 		if (this.length==this.width){
-			return "The rectangle is a square";
+			System.out.println("This is a square!");
+			return true;
 		}
 		else{
-			return "It is not a square!";
+			System.out.println("This is not a square!");
+			return false;
 		}
 	}
 
